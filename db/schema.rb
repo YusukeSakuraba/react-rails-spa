@@ -41,7 +41,7 @@ ActiveRecord::Schema.define(version: 2022_05_29_233234) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "restraurants", force: :cascade do |t|
+  create_table "restaurants", force: :cascade do |t|
     t.string "name", null: false
     t.integer "fee", default: 0, null: false
     t.integer "time_required", null: false
