@@ -14,3 +14,61 @@ Processing by Api::V1::RestaurantsController#index as HTML
 Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 598)
 
 
+Started GET "/api/v1/restaurants" for ::1 at 2022-05-30 10:56:40 +0900
+Processing by Api::V1::RestaurantsController#index as HTML
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/controllers/api/v1/restaurants_controller.rb:10:in `index'
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.8ms | Allocations: 4226)
+
+
+Started GET "/api/v1/restaurants" for ::1 at 2022-05-30 10:57:09 +0900
+Processing by Api::V1::RestaurantsController#index as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/restaurants_controller.rb:7:in `index'
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/controllers/api/v1/restaurants_controller.rb:7:in `index'
+Completed 200 OK in 14ms (Views: 10.1ms | ActiveRecord: 1.6ms | Allocations: 6571)
+
+
+Started GET "/api/v1/restaurants" for ::1 at 2022-05-30 10:57:10 +0900
+Processing by Api::V1::RestaurantsController#index as HTML
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/controllers/api/v1/restaurants_controller.rb:7:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms | Allocations: 982)
+
+
+Started GET "/api/v1/restaurants" for ::1 at 2022-05-30 10:57:10 +0900
+Processing by Api::V1::RestaurantsController#index as HTML
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/controllers/api/v1/restaurants_controller.rb:7:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 945)
+
+
+Started GET "/api/v1/restaurants" for ::1 at 2022-05-30 11:07:45 +0900
+Processing by Api::V1::RestaurantsController#index as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/restaurants_controller.rb:7:in `index'
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/controllers/api/v1/restaurants_controller.rb:7:in `index'
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.9ms | Allocations: 1548)
+
+
+Started GET "/api/v1/restaurants" for ::1 at 2022-05-30 11:07:46 +0900
+Processing by Api::V1::RestaurantsController#index as HTML
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/controllers/api/v1/restaurants_controller.rb:7:in `index'
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.3ms | Allocations: 945)
+
+
+Started GET "/api/v1/restaurants/1/foods" for ::1 at 2022-05-30 11:08:47 +0900
+Processing by Api::V1::FoodsController#index as HTML
+  Parameters: {"restaurant_id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/foods_controller.rb:5:in `index'
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/foods_controller.rb:5:in `index'
+  [1m[36mFood Load (0.3ms)[0m  [1m[34mSELECT "foods".* FROM "foods" WHERE "foods"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  ↳ app/controllers/api/v1/foods_controller.rb:8:in `index'
+Completed 200 OK in 41ms (Views: 12.6ms | ActiveRecord: 2.6ms | Allocations: 16433)
+
+

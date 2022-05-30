@@ -4,10 +4,9 @@ module Api
       def index
         restaurants = Restaurant.all
 
-        # render json: {
-        #   restaurants: restaurants
-        # }, status: :ok
-        render json: restaurants
+        render json: {
+          restaurants: restaurants
+        }, status: :ok
       end
     end
   end
