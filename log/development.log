@@ -252,3 +252,12 @@ Processing by Api::V1::RestaurantsController#index as HTML
 Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.2ms | Allocations: 946)
 
 
+Started GET "/api/v1/restaurants" for ::1 at 2022-06-01 06:56:44 +0900
+Processing by Api::V1::RestaurantsController#index as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/restaurants_controller.rb:7:in `index'
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/controllers/api/v1/restaurants_controller.rb:7:in `index'
+Completed 200 OK in 30ms (Views: 24.9ms | ActiveRecord: 1.6ms | Allocations: 1538)
+
+
