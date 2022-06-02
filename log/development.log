@@ -812,3 +812,10 @@ Started GET "/v1/users" for ::1 at 2022-06-02 09:10:19 +0900
   
 ActionController::RoutingError (No route matches [GET] "/v1/users"):
   
+Started GET "/" for ::1 at 2022-06-02 10:02:59 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/yusukesakuraba/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/railties-6.1.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/yusukesakuraba/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/railties-6.1.5/lib/rails/templates/rails/welcome/index.html.erb (Duration: 104.3ms | Allocations: 213)
+Completed 200 OK in 128ms (Views: 113.4ms | Allocations: 964)
+
+
